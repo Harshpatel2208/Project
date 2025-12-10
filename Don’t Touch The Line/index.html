@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Emoji Escape — Fixed</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <title>Emoji Escape — Joystick Only</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- HUD -->
   <div id="scoreDisplay">Score: 0</div>
   <div id="maxScoreDisplay">Max: 0</div>
 
@@ -18,25 +17,23 @@
     <div class="pu" id="pu-bomb">💣</div>
   </div>
 
-  <!-- Canvas -->
   <canvas id="gameCanvas"></canvas>
 
-  <!-- Game Over -->
   <div id="gameOverScreen">
-    <h2 id="gameOverText">Score: 0</h2>
+    <h2 id="gameOverText"></h2>
     <button onclick="restartGame()">Restart</button>
   </div>
 
-  <!-- Mobile Joystick -->
+  <!-- Joystick -->
   <div id="joystickOuter">
     <div id="joystickInner"></div>
   </div>
 
-  <!-- Sounds -->
-  <audio id="sfx-hit" src="https://assets.mixkit.co/active_storage/sfx/2001/2001-preview.mp3" preload="auto"></audio>
-  <audio id="sfx-blast" src="https://assets.mixkit.co/active_storage/sfx/699/699-preview.mp3" preload="auto"></audio>
-  <audio id="sfx-power" src="https://assets.mixkit.co/active_storage/sfx/1483/1483-preview.mp3" preload="auto"></audio>
-  <audio id="sfx-high" src="https://assets.mixkit.co/active_storage/sfx/467/467-preview.mp3" preload="auto"></audio>
+  <!-- Audio -->
+  <audio id="sfx-hit" src="https://assets.mixkit.co/active_storage/sfx/2001/2001-preview.mp3"></audio>
+  <audio id="sfx-blast" src="https://assets.mixkit.co/active_storage/sfx/699/699-preview.mp3"></audio>
+  <audio id="sfx-power" src="https://assets.mixkit.co/active_storage/sfx/1483/1483-preview.mp3"></audio>
+  <audio id="sfx-high" src="https://assets.mixkit.co/active_storage/sfx/467/467-preview.mp3"></audio>
 
   <script src="script.js"></script>
 </body>
